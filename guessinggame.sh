@@ -10,11 +10,13 @@ do
 if [[ $response -gt $number ]]
  then 
   echo "Your guess is too high"
+  sleep 0.5
   echo "Please try again"
   read response
   continue
  elif [[ $response -lt $number ]]
   then echo "Your guess is too low"
+  sleep 0.5
   echo "Please try again"
   read response
   continue
